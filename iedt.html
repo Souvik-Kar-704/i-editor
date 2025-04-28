@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My_Photo_Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="editor-container">
+
+    <!-- Image Pad -->
+    <div class="image-pad" id="image-pad">
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <!-- Option Bar -->
+    <div class="option-bar">
+
+      <!-- Framing -->
+      <div class="option-group">
+        <h3>Framing</h3>
+        <select id="framing-options">
+          <option value="original">Original</option>
+          <option value="1-1">1:1</option>
+          <option value="4-3">4:3</option>
+          <option value="3-4">3:4</option>
+          <option value="16-9">16:9</option>
+          <option value="9-16">9:16</option>
+          <option value="3-2">3:2</option>
+          <option value="2-3">2:3</option>
+          <option value="7-5">7:5</option>
+          <option value="5-7">5:7</option>
+        </select>
+        <button id="rotate-x">Rotate X</button>
+        <button id="rotate-y">Rotate Y</button>
+      </div>
+
+      <!-- Adjust Defaults -->
+      <div class="option-group">
+        <h3>Adjust Default</h3>
+        <label>Brightness <input type="range" id="brightness" min="0" max="200" value="100"></label>
+        <label>Greyscale <input type="range" id="greyscale" min="0" max="100" value="0"></label>
+        <label>Contrast <input type="range" id="contrast" min="0" max="200" value="100"></label>
+        <label>Saturation <input type="range" id="saturation" min="0" max="200" value="100"></label>
+        <label>Hue <input type="range" id="hue" min="0" max="360" value="0"></label>
+        <label>Sharpness <input type="range" id="sharpness" min="0" max="200" value="100"></label>
+      </div>
+
+      <!-- Filters -->
+      <div class="option-group">
+        <h3>Filters</h3>
+        <select id="filter-options">
+          <option value="original">Original</option>
+          <option value="bw">Black and White</option>
+          <option value="cyberpunk">Cyberpunk</option>
+          <option value="softgrey">Soft Grey</option>
+          <option value="summer">Summer</option>
+          <option value="cool">Cool</option>
+          <option value="warm">Warm</option>
+          <option value="lomo">Lomo</option>
+          <option value="greenorange">Green Orange</option>
+        </select>
+      </div>
+
+      <!-- Text Controls -->
+      <div class="option-group">
+        <h3>Text</h3>
+        <input type="text" id="text-input" placeholder="Enter text">
+        <label>Font Size: <input type="number" id="font-size" value="20"></label>
+        <label>Font Color: <input type="color" id="font-color" value="#000000"></label>
+        <button id="add-text">Add Text</button>
+      </div>
+
+      <!-- Eraser and Controls -->
+      <div class="option-group">
+        <h3>Tools</h3>
+        <button id="eraser">Eraser</button>
+        <button id="undo">Undo</button>
+        <button id="redo">Redo</button>
+      </div>
+
+      <!-- Image Insert & Download -->
+      <div class="option-group">
+        <h3>Image</h3>
+        <input type="file" id="upload-image" accept="image/*">
+        <button id="download-image">Download Image</button>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
