@@ -61,6 +61,6 @@ JavaScript: To handle image manipulation, text addition, and interactions like u
 # Installation
 To run this project locally on your machine, follow these steps:
 Clone the repository or download the files.
-git clone https://github.com/your-username/image-editor.git
+git clone https://github.com/Souvik-Kar-704/image-editor.git
 Open the index.html file in your browser.
 
